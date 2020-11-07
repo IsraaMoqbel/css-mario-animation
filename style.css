@@ -1,0 +1,100 @@
+body {
+    position: relative;
+    height: 100vh;
+}
+
+.image {
+    width: 50px;
+    height: 50px;
+    animation: bubble 7s ease-in-out 1s infinite;
+    position: absolute;
+    top: 10px;
+    right: 10%;
+}
+
+@keyframes bubble {
+    from {
+        opacity: 1;
+        transform: translateY(90vh);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(10vh);
+    }
+}
+
+.bubble1 {
+    right: 20%;
+    animation-duration: 6s;
+    animation-delay: 1s;
+}
+
+.bubble2 {
+    right: 50%;
+    animation-duration: 9s;
+}
+
+.bubble3 {
+    right: 90%;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+
+.bubble4 {
+    right: 70%;
+    animation-duration: 10s;
+}
+
+.right40 {
+    right: 40%;
+    animation-duration: 8s;
+
+}
+
+.right80 {
+    right: 80%;
+    animation-delay: 1s;
+}
+
+.mario {
+    width: 200px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.coin {
+    width: 30px;
+    position: absolute;
+    bottom: 50%;
+    right: 21%;
+    animation: coin 1s ease-in-out 0s infinite;
+}
+
+.block {
+    width: 50px;
+    position: absolute;
+    bottom: 50%;
+    right: 20%;
+    animation: block 1s ease-in-out 0s infinite;
+}
+
+@keyframes coin {
+    from {
+        transform: translateY(-15px);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-130px);
+        opacity: 0;
+    }
+}
+
+@keyframes block {
+    from {
+        transform: translateY(-10px);
+    }
+    to {
+        transform: translateY(-20px);
+    }
+}
